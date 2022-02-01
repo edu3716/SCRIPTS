@@ -1,0 +1,67 @@
+addingArqdomToSeqnames.pl --> you pass a FASTA and .arqdom file and it prints in the seqnames the domain architectures
+
+adding_lengths_fasta_seqnames.pl --> Insert a FASTA input and will add '\tlen=X' in the seqnames
+
+add_suffix_to_some_FASTAseqnames.pl --> you pass a FASTA, a suffix, and the list of the seqnames to add the sufix
+
+advanced_formatting_fasta.pl --> Insert a FASTA input and will print that FASTA in a 1 line per seq manner. ADVANCED: avoid the problematic of those repeated seqs!!!!
+
+annotatingFastaseqnames_fromSwissProt.pl --> Insert a outfmt6 output from Swissprot an the FASTA of queries and it changes the query names to add SwissProt besthit maxtargetseqs1 output info
+
+annotating_from_eggnog.py --> you pass a FASTA and it creates an ~arqdom file but with eggnog annotations instead
+
+block_oflengths_from_fasta.pl --> agafa les seqs d'un fasta i li fiques un número per fer blocs en funció de la longitud (e.g. 10 et farà 10 blocs i et dirà quantes i quines seqs van a cada bloc. Al stderr et printa les seqs q van a cada bloc i al stdout els blocs; crec).
+
+changingSeqnamesAccordingToAfile.pl --> Replace FASTA seqnames for names in a file
+
+counting_length_full_proteome.pl --> fiques proteoma i et dóna diferents dades de counting (com num de prots, average prot length, total proteome length, etc)
+
+discard_seqs_below_X_length.pl --> Filters seqs according to their length from a FASTA (.fa or .msa)
+
+discardSeqsByLength.py --> same as discard_seqs_below_X_length.pl, but only can discard below, not larger the threshold value
+
+fastqToFasta.py --> converts a FASTQ to FASTA, adding a ">"
+
+editing_fastanames.pl --> li fica un prefix al nom del fasta; e.g. >orc1_elquehihaviaabans
+
+excludeseqs_byAVERAGE_length_from_fasta.pl --> li dius les seqs de quina longitud no vols i fora (threshold length to include e.g. 1-99).
+
+getting_taxonomicalinfo_prokaryoticseqs.pl --> you put a FASTA with UP (prokaryotic) seqs and it searches the equivalent sequences in NR and then modifies the name of that sequences [in a Nexus tree or in a FASTA] adding info of genus (or species if genus is void) as well as of phylum (or other higher level taxonomical category if phylum is void).
+
+keep_larger_or_shorter_thanX_rawlength.pl --> you input a FASTA and prints only seqs >= / < than X length
+
+excludeseqs_from_fasta.pl --> li dius quines seqs no vols i fora
+
+formatting_fasta.pl --> formateja els fastas per a que hi capiga tota la seq en 1 l√≠nea
+
+fixing_spacesproblem.pl --> fix the problem of concatenning different fasta and that there are some that doesn't have a \n at the last seq so the next > of the next file concatenated will paste just after the last letter of the last sequence of the last fasta concatenated instead of pasting in a new line
+
+keeping_only_allspeciesnames.pl --> Insert a Fasta file (with p-orc1 or without) and will print, sorted, the diff species abb per line
+
+length_seqs_in_fasta.pl --> Insert a FASTA file and will print the length for each seq
+
+names_to_numbers_and_reverse.pl --> you pass a FASTA and it converts the seqnames to numbers, leaving a dictionary with the equivalences. Is able to do the opposite
+
+parsing_outfmt6-sortedevalue.pl --> d'un outfmt6 sorted per e-value (de menor a major --> de més significatiu a menys), si vols quedar-te amb les "millors" queries/subjects. Especifiques si vols per exemple les 10/20 etc millors de queries i subjects i les printa en 1 seq per line. Apart, warneja les línees de fasta usades per quedar-se aquest subset de top queries/subjects. PD: per ordenar per e-value amb terminal: export LC_NUMERIC=en_US.utf-8; sort -g -k 11(?)
+
+reformating_seqnames_fasta.pl --> canvia els ids dels fastas: sol deixa el primer bloc de caràcters després del > i abans del primer espai i afegeix davant el nom del fitxer excepte el .fasta; per això és important que el nom del fitxer sigui l'abreviatura de l'espècie (i ficar-lo en una carpeta diferent per a que no es peti el arxiu original).
+
+removePrefixOrthogroup.pl --> you pass the typical FASTA with seqnames with prefix of the orthogroup like e.g. >orc1_Hsap and prints a second column with the name without the prefix (e.g. from >orc1_Hsap to >Hsap)
+
+removingRedundantSeqs_andFixingMultilineSplittedSeqs.py --> You pass a FASTA file and converts it in 1seqline, removing also repeated sequences
+
+reportseqs_below_AVERAGE-MEDIAN-length.pl --> You put a FASTA and a threshold between 0-100 and write seqs which length is below the threhsold. That threshold is the % of MEDIAN length
+
+sorting_FASTA_seqnames_also_can_filter.pl --> You pass a FASTA prints that FASTA (or only the seqnames) sorted according to their length, in increasing or decreasing order. Also, you can (i) remove from the output sequences below certain length threshold and (ii) remove from the output all the sequences except those present in a List file
+
+selectseqs_from_fasta.pl --> li pasees un fasta i un arxiu on a cada línea hi hago un parto que correspon amb seqs q vols recuperar (exemple: si fico Hsap recuperaré totes les seqs que tinguin hsap HSap HSAp etc en el seu nom). Ignora línees comentades amb #
+
+split_scaffolds_vecscreen.pl --> Insert a FASTA and a .tsv file with seqname_leftposition_rightposition (post VecScreen acquired info). Warning: only one cut per sequence.
+
+strictly_selecting_seqs.pl --> strictly select seqs with grep: which is faster if the fasta file is too heavy. Needs the fasta file and also a file with one_seqname_per_line with the names of the seqs to keep. Important: the fasta needs to be in 1 seq per line (i.e. all of the seqs have to be present in a single line rather than splitted).
+
+subPrintingFasta.py --> You pass a 1seqline FASTA and the interval of seqs that you want to print (e.g. from 5 to 15, 5-15, both included, etc.).
+
+substract_PfamRegions_ofProteins.pl --> Useful if you want to capture UP orthologs with accuracy and not because alignments with spurious regions of the protein. You can pass the list of PfamDomain to ignore.
+
+threads_strictly_select_seqs.pl --> strictly extract seqs from a FASTA with multiple greps at the same time [accepts >]
