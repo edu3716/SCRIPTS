@@ -2,8 +2,9 @@
 A set of Python and Perl scripts for comparative genomics
 
 MultipleSequenceAlignmentTools
-	AAfreqsPerTaxa.py --> It counts the amino acid frequency for every sequence in the alignment
-	clean_align.pl --> It clean a given multiple sequence alignment FASTA, keeping only the positions of interest.
+
+	-AAfreqsPerTaxa.py --> It counts the amino acid frequency for every sequence in the alignment
+	-clean_align.pl --> It clean a given multiple sequence alignment FASTA, keeping only the positions of interest.
 	counting_missingDataPerSeqInMSA.py --> It computes statistics from a multiple sequence alignment, including information about missing data (gaps).
 	countingMSAsize.py --> It prints the number of sites of a given multiple sequence alignment (FASTA).
 	discard_seqs_below_X_length.pl --> It gets rid of sequenes which in a given multiple sequence alignment FASTA file have less than a certain length
