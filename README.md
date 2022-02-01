@@ -3,8 +3,8 @@ A set of Python and Perl scripts for comparative genomics
 
 MultipleSequenceAlignmentTools
 
-	-AAfreqsPerTaxa.py --> It counts the amino acid frequency for every sequence in the alignment
-	-clean_align.pl --> It clean a given multiple sequence alignment FASTA, keeping only the positions of interest.
+	AAfreqsPerTaxa.py --> It counts the amino acid frequency for every sequence in the alignment
+	clean_align.pl --> It clean a given multiple sequence alignment FASTA, keeping only the positions of interest.
 	counting_missingDataPerSeqInMSA.py --> It computes statistics from a multiple sequence alignment, including information about missing data (gaps).
 	countingMSAsize.py --> It prints the number of sites of a given multiple sequence alignment (FASTA).
 	discard_seqs_below_X_length.pl --> It gets rid of sequenes which in a given multiple sequence alignment FASTA file have less than a certain length
@@ -14,6 +14,7 @@ MultipleSequenceAlignmentTools
 	reportseqs_below_AVERAGE-MEDIAN-length.pl --> You put a FASTA and a threshold between 0-100 and write seqs which length is below the threhsold. That threshold is the % of MEDIAN length.
 
 ParsingBLASTfiles	
+
 	blastToBed.py --> It turns a BLAST file outfmt6 into a BED file, using the queries or the subjects as chromosomes
 	calculating_query_coverage_good.pl --> For each query, and considering only those alignments with the best target, calculates \%query_coverage and average \%id between the different alignments between query and the best target
 	computing_queryOrTargetCoverage_perTargetOrQuery.pl --> It gets from a BLAST outfmt6 with qlen and slen columns the average_id and coverage of every target per query or of every query per target
@@ -25,7 +26,8 @@ ParsingBLASTfiles
 	removing_redundance.pl --> From a BLAST outfmt6 file, it removes those hits where the query and the subject are the same sequence
 	sortingTargetsByScore.py --> It reads a BLAST outfmt6 file, sorts the hits of every query by the desired numeric alignment metric, and allows to print only a subset of best hits per query if desired.
 	
-PfamProteinDomains	
+PfamProteinDomains
+
 	substract_PfamRegions_ofProteins.pl --> It takes a given set of FASTA sequences, and prints subregions of that FASTA sequences, one for each Pfam domain detected
 	
 ParsingFASTAfiles
@@ -41,13 +43,15 @@ ParsingFASTAfiles
 	reversingProtSeqs.py --> It reads a FASTA file and reverses the sequences
 	subPrintingFasta.py --> It selects a subset of sequences from a FASTA file (based on sequence name)
 
-GenomeParsing	
+GenomeParsing
+
 	computing_per_intergenicregions_genome.py --> It reads a given genome (FASTA file) and its corresponding GFF3 file and prints information about the fraction of the genome without genes.
 	counting_bases.pl --> It counts the number of occurrences of a given nucleotide base and the GC content from a given FASTA file.
 	dinucleotide_counter.pl --> It prints the occurrences of every dinucleotide from a given FASTA file.
 	extracting_regions.pl --> It substracts regions from a given genome FASTA file.
 	
 PhylogeneticTreesParsing
+
 	computing_nodalAndBranchLengthDistances_betweenNodes.py --> From a Newick file, it computes distances between nodes using ETE3 toolkit (must be installed).
 	computingRFdistance.py --> It computes the RF distance between two phylogenetic trees (Newick format, ETE3 tooklit must be installed).
 	distFromRootToTips_medianAndStd.py --> It computes the median and std_dev of all distances from the tips to the root of a given Newick file
