@@ -1,5 +1,5 @@
 # SCRIPTS
-A set of Python and Perl scripts for comparative genomics
+A set of Python and Perl scripts to perform modifications or analyses of FASTA files, MSA files and BLAST results
 
 MultipleSequenceAlignmentTools ==> Directory including scripts to perform modifications or analyses of Multiple Sequence Alignment files in FASTA format.
 
