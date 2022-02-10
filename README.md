@@ -60,6 +60,7 @@ A set of Python and Perl scripts to perform modifications or analyses of FASTA f
 
 	computing_nodalAndBranchLengthDistances_betweenNodes.py --> From a Newick file, it computes distances between nodes using ETE3 toolkit (must be installed).
 	computingRFdistance.py --> It computes the RF distance between two phylogenetic trees (Newick format, ETE3 tooklit must be installed).
+	computingRFdistance.allVsAll.py --> It computes the RF distance between a list of phylogenetic trees (Newick format, ETE3 tooklit must be installed). They can be species trees or gene trees
 	distFromRootToTips_medianAndStd.py --> It computes the median and std_dev of all distances from the tips to the root of a given Newick file
 	gettingMeanAndMedianNodalSupports --> It computes the mean and median nodal support value of a given Newick file.
 	gettingParentNodalSupportsAndBranchLengthForTerminalNodes.py --> It reads a Newick tree file including nodal supports (ete3 module is required). From it, it prints a .tsv file with one row per leaf and 6 columns per row including information on (i) filename, (ii) support for the parent node in the tree, (iii) branch length distance to parent node, (iv) rel. branch length distance to parent node, (v) Z-score branch length distance to parent node, (vi) branch name.
