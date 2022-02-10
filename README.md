@@ -1,7 +1,7 @@
 # SCRIPTS
 A set of Python and Perl scripts to perform modifications or analyses of FASTA files, MSA files and BLAST results
 
-MultipleSequenceAlignmentTools ==> Directory including scripts to perform modifications or analyses of Multiple Sequence Alignment files in FASTA format.
+**MultipleSequenceAlignmentTools** Directory including scripts to perform modifications or analyses of Multiple Sequence Alignment files in FASTA format.
 
 	AAfreqsPerTaxa.py --> It counts the amino acid frequency for every sequence in the alignment
 	clean_align.pl --> It clean a given multiple sequence alignment FASTA, keeping only the positions of interest.
