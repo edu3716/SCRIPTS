@@ -1,11 +1,11 @@
 # SCRIPTS
 A set of Python and Perl scripts to perform modifications or analyses of FASTA files, MSA files and BLAST results
 
-**/Gene_Ontology:** This directory includes scripts to work with Gene Ontology terms
+**Gene_Ontology:** This directory includes scripts to work with Gene Ontology terms
 
 	gettingGO_andGOslim_fromEggNOG.py --> It takes the GO annotations from the eggnog output file, and reduces the GO redundancy by collapsing GO terms and leaving only those GO terms found in the desired goslim file (go.obo and GO slim files can be downloaded from http://geneontology.org/docs/download-ontology/#subsets)
 
-**/MultipleSequenceAlignmentTools:** This directory includes scripts to perform modifications or analyses of Multiple Sequence Alignment files in FASTA format.
+**MultipleSequenceAlignmentTools:** This directory includes scripts to perform modifications or analyses of Multiple Sequence Alignment files in FASTA format.
 
 	AAfreqsPerTaxa.py --> It counts the amino acid frequency for every sequence in the alignment
 	clean_align.pl --> It clean a given multiple sequence alignment FASTA, keeping only the positions of interest.
