@@ -45,6 +45,7 @@ A set of Python and Perl scripts to perform modifications or analyses of FASTA f
 	excludeseqs_from_fasta.pl --> It excludes a subset of sequences from a FASTA file (based on sequence name)
 	fasta_splitter.py --> It splits a given FASTA file in a subset of FASTA files.
 	fastqToFasta.py --> It converts a given FASTQ file into a FASTA file.
+	fishingSeqsFromFASTA_andPrintingToDiffFiles.py --> It allows to fish different subsets of sequences from a FASTA file and print each subset to a distinct FASTA file.
 	formatting_fasta.pl --> It converts a multi-line FASTA file into a FASTA file where every sequence is written in a single text line
 	reversingProtSeqs.py --> It reads a FASTA file and reverses the sequences
 	subPrintingFasta.py --> It selects a subset of sequences from a FASTA file (based on sequence name)
