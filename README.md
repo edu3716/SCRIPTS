@@ -21,6 +21,7 @@ A set of Python and Perl scripts to perform modifications or analyses of FASTA f
 
 	blastToBed.py --> It turns a BLAST file outfmt6 into a BED file, using the queries or the subjects as chromosomes
 	calculating_query_coverage_good.pl --> For each query, and considering only those alignments with the best target, calculates \%query_coverage and average \%id between the different alignments between query and the best target
+	checking_speciesRepresentationInTargetHits.py --> It parses a tabular BLAST output file to find the relative representation of each species in the database among the top hits of the sequences from each species in the query set.
 	computing_queryOrTargetCoverage_perTargetOrQuery.pl --> It gets from a BLAST outfmt6 with qlen and slen columns the average_id and coverage of every target per query or of every query per target
 	extracted_hitted_translated_seqs_from_tBLASTn.pl --> from a BLAST .outfmt6 file, it extracts subregions from query or subject sequence [i.e. BLASTx or tBLASTn] and then one with the 6 putative frames with less stop codons is written
 	filtering_percent_id.pl --> From a BLAST .outfmt6 file, it prints only those lines with a perc_identity greater than the desired threshold
