@@ -34,6 +34,7 @@ A set of Python and Perl scripts to perform modifications or analyses of FASTA f
 **PfamProteinDomains:** This directory includes scripts to perform modifications or analyses of sequence protein domain information from PfamScan.
 
 
+	parsing_pfamscan_to_arqdom_files.pl --> Insert the output from pfamscan.pl. It will output a tsv file with the first column including the sequence name, and the second column including all the protein domain found by PfamScan on that sequence
 	substract_PfamRegions_ofProteins.pl --> It takes a given set of FASTA sequences, and prints subregions of that FASTA sequences, one for each Pfam domain detected
 	
 **ParsingFASTAfiles:** This directory includes scripts to perform modifications or analyses of FASTA files.
