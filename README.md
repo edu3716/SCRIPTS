@@ -58,6 +58,7 @@ A set of Python and Perl scripts to perform modifications or analyses of FASTA f
 	counting_bases.pl --> It counts the number of occurrences of a given nucleotide base and the GC content from a given FASTA file.
 	dinucleotide_counter.pl --> It prints the occurrences of every dinucleotide from a given FASTA file.
 	extracting_regions.pl --> It substracts regions from a given genome FASTA file.
+	get_genes_fromGFF3.py --> It prints all gene sequences from the genome based on GFF3 annotations.
 	
 **PhylogeneticTreesParsing:** This directory includes scripts to perform modifications or analyses of phylogenetic trees in Newick format.
 
